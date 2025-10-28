@@ -1,0 +1,23 @@
+{
+  "name": "claude-code-marketplace",
+  "owner": {
+    "name": "Vino",
+    "url": "https://github.com/augustVino"
+  },
+  "metadata": {
+    "description": "Curated Claude Code plugins: skills, workflows, and productivity tools",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "generate-commit",
+      "source": "./plugins/generate-commit",
+      "description": "Generate a commit message for the changes made",
+      "version": "1.0.0",
+      "author": {
+        "name": "Vino"
+      },
+      "homepage": "https://github.com/augustVino/claude-code-marketplace/tree/main/plugins/generate-commit"
+    }
+  ]
+}
