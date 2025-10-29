@@ -18,6 +18,16 @@
         "name": "Vino"
       },
       "homepage": "https://github.com/augustVino/claude-code-marketplace/tree/main/plugins/generate-commit"
+    },
+    {
+      "name": "gitlab-mr-review",
+      "source": "./skills/gitlab-mr-review",
+      "description": "当用户提供 GitLab Merge Request URL 并请求代码审查时，你需要使用此技能",
+      "version": "1.0.0",
+      "author": {
+        "name": "Vino"
+      },
+      "homepage": "https://github.com/augustVino/claude-code-marketplace/tree/main/skills/gitlab-mr-review/SKILL.md"
     }
   ]
 }
