@@ -28,6 +28,16 @@
         "name": "Vino"
       },
       "homepage": "https://github.com/augustVino/claude-code-marketplace/tree/main/skills/gitlab-mr-review/SKILL.md"
+    },
+    {
+      "name": "update-claude-md",
+      "source": "./plugins/update-claude-md",
+      "description": "Automatically update CLAUDE.md file based on recent code changes",
+      "version": "1.0.0",
+      "author": {
+        "name": "Vino"
+      },
+      "homepage": "https://github.com/augustVino/claude-code-marketplace/tree/main/plugins/update-claude-md"
     }
   ]
 }
