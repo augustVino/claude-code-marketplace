@@ -92,6 +92,10 @@ export GITLAB_PRIVATE_TOKEN="glpat-xxxxxxxxxxxx"
 
 详见：[gitlab-mr-review 文档](skills/gitlab-mr-review/SKILL.md) | [脚本说明](skills/gitlab-mr-review/scripts/README.md)
 
+#### 2. **pdf-skill**
+
+教程：https://juejin.cn/post/7573508361741500416
+
 ## 📦 安装
 
 ### 方式一：克隆仓库
