@@ -44,9 +44,17 @@ Claude Code 配置仓库，包含自定义命令、技能和代理，用于提�
 
 #### 方式一：通过 Claude Code Marketplace
 
+/
+
 ```bash
 # 在 Claude Code 中运行
-/marketplace install augustVino/claude-code-settings
+/plugin marketplace add augustVino/claude-code-settings
+
+# Install all of the settings (commands, agents and skills)
+/plugin install claude-code-settings
+
+# Install nanobanana-skill only
+/plugin install nanobanana-skill
 ```
 
 #### 方式二：手动安装

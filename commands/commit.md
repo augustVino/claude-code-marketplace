@@ -1,33 +1,49 @@
-# Claude 命令：提交
+---
+description: Create standardized Git commits with conventional format and emoji
+argument-hint: [--check]
+allowed-tools: Bash(git:*), Bash(pnpm:*)
+---
 
-这个命令帮助您创建规范的 Git 提交，自动生成符合约定式提交规范的消息并配上合适的表情符号。
+# Commit
 
-## 使用方法
+自动创建规范的 Git 提交，生成符合约定式提交规范的消息并配上合适的表情符号。
 
-要创建提交，只需输入：
+## Usage:
 
-```
-/commit
-```
+`/commit [--check]`
 
-或者使用选项：
+**Options:**
+- `--check`: 执行预提交检查（lint、build、generate:docs）
 
-```
-/commit --check
-```
+## Process:
 
-## 功能说明
+### 1. Pre-commit Checks (Optional)
 
-1. 可选择性运行预提交检查（仅在指定 `--check` 时）：
-   - `pnpm lint` 检查代码质量
-   - `pnpm build` 验证构建是否成功
-   - `pnpm generate:docs` 更新项目文档
-2. 检查当前暂存的文件状态
-3. 如果没有暂存文件，自动添加所有修改和新增的文件
-4. 分析代码变更内容，理解本次提交的改动
-5. 智能判断是否包含多个不相关的逻辑变更
-6. 如果发现多个独立变更，建议拆分成多个小提交
-7. 为每个提交生成符合规范的消息，包含合适的表情符号和类型标识
+仅在指定 `--check` 参数时执行：
+- 运行 `pnpm lint` 检查代码质量
+- 运行 `pnpm build` 验证构建成功
+- 运行 `pnpm generate:docs` 更新文档
+- 如果检查失败，询问是否继续提交
+
+### 2. Analyze Changes
+
+- 检查当前暂存区状态
+- 如果暂存区为空，自动添加所有修改和新增文件
+- 分析代码变更内容和影响范围
+- 判断是否包含多个不相关的逻辑变更
+
+### 3. Generate Commit Message
+
+- 根据变更类型选择合适的 commit type
+- 生成简洁明了的提交描述（≤70 字符）
+- 添加对应的表情符号
+- 使用祈使语气的动词开头
+
+### 4. Execute Commit
+
+- 如果发现多个独立变更，建议拆分提交
+- 为每个提交生成规范的消息
+- 执行 git commit 并验证结果
 
 ## 提交最佳实践
 
