@@ -1,23 +1,22 @@
 {
-  "name": "claude-code-marketplace",
+  "name": "claude-code-settings",
   "owner": {
     "name": "Vino",
     "url": "https://github.com/augustVino"
   },
   "metadata": {
-    "description": "Curated Claude Code plugins: skills, workflows, and productivity tools",
-    "version": "1.0.0"
+    "description": "Claude Code settings, commands and agents for vibe coding",
+    "version": "1.2.0"
   },
   "plugins": [
     {
-      "name": "generate-commit",
-      "source": "./plugins/generate-commit",
-      "description": "Generate a commit message for the changes made",
-      "version": "1.0.0",
+      "name": "claude-code-settings",
+      "source": "./",
+      "description": "Claude Code settings, commands and agents for vibe coding",
+      "version": "1.2.0",
       "author": {
         "name": "Vino"
-      },
-      "homepage": "https://github.com/augustVino/claude-code-marketplace/tree/main/plugins/generate-commit"
+      }
     },
     {
       "name": "gitlab-mr-review",
@@ -27,7 +26,7 @@
       "author": {
         "name": "Vino"
       },
-      "homepage": "https://github.com/augustVino/claude-code-marketplace/tree/main/skills/gitlab-mr-review/SKILL.md"
+      "homepage": "https://github.com/augustVino/claude-code-marketplace/tree/main/skills/gitlab-mr-review"
     },
     {
       "name": "update-claude-md",
@@ -38,6 +37,36 @@
         "name": "Vino"
       },
       "homepage": "https://github.com/augustVino/claude-code-marketplace/tree/main/skills/update-claude-md"
+    },
+    {
+      "name": "pdf-skill",
+      "source": "./skills/pdf-skill",
+      "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Claude needs to fill in a PDF form or programmatically process, generate, or analyze PDF documents at scale.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Vino"
+      },
+      "homepage": "https://github.com/augustVino/claude-code-marketplace/tree/main/skills/pdf-skill"
+    },
+    {
+      "name": "nanobanana-skill",
+      "source": "./skills/nanobanana-skill",
+      "description": "Generate or edit images using Google Gemini API via nanobanana",
+      "version": "1.0.0",
+      "author": {
+        "name": "Vino"
+      },
+      "homepage": "https://github.com/augustVino/claude-code-marketplace/tree/main/skills/nanobanana-skill"
+    },
+    {
+      "name": "typescript-advanced-types",
+      "source": "./skills/typescript-advanced-types",
+      "description": "Master TypeScript's advanced type system including generics, conditional types, mapped types, template literals, and utility types for building type-safe applications. Use when implementing complex type logic, creating reusable type utilities, or ensuring compile-time type safety in TypeScript projects.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Vino"
+      },
+      "homepage": "https://github.com/augustVino/claude-code-marketplace/tree/main/skills/typescript-advanced-types"
     }
   ]
 }
