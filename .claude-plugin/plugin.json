@@ -1,0 +1,13 @@
+{
+  "name": "claude-code-settings",
+  "version": "1.2.0",
+  "description": "Claude Code settings, commands and agents for vibe coding",
+  "author": {
+    "name": "Vino",
+    "url": "https://github.com/augustVino/claude-code-settings"
+  },
+  "homepage": "https://github.com/augustVino/claude-code-settings",
+  "repository": "https://github.com/augustVino/claude-code-settings",
+  "license": "MIT",
+  "keywords": ["claude-code", "vibe-coding"]
+}
